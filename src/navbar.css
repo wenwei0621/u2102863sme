@@ -1,0 +1,35 @@
+.custom-hover {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px; /* Rounded corners for the grey box */
+    color: #1d3557; /* Dark blue text color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .custom-hover:hover {
+    background-color: #d1ccccee; /* Light grey background on hover */
+    color: #1d3557; /* Maintain dark blue text color */
+  }
+  
+  /* Make the collapsed navbar scrollable */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    max-height: 70vh;  /* Set a max-height for the collapsed navbar */
+    overflow-y: auto;  /* Enable vertical scrolling */
+  }
+
+  /* Optional: Styling for the scrollbar */
+  .navbar-collapse::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+}
